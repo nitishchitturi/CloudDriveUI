@@ -1,28 +1,16 @@
 <h2>My Files</h2>
 <ul class="cdfiles">
-  <li *ngFor="let cdfile of cdfiles"
-    [class.selected]="cdfile === selectedFile"
+  <li *ngFor="let cdfile of cdfiles"  
+  [class.selected]="cdfile === selectedFile"
     (click)="onSelect(cdfile)">
     <button>download</button>     <button>move</button>    <button>delete</button>
     <span class="badge">{{cdfile.id}}
         </span> {{cdfile.name}}
-          
-        
+    
+   
+               
   </li>
   
 </ul>
  
-<div *ngIf="selectedFile">
-  
-   <h2>{{ selectedFile.name | uppercase }} Details</h2>
-   <div><span>id: </span>{{selectedFile.id}}</div>
-   <div>
-     <p>Name : {{selectedFile.name}}</p>
-     <p>Path : {{selectedFile.path}}</p>
-     <p>SHA : {{selectedFile.SHA}}</p>
-     <p>size : {{selectedFile.size}}</p>
-     <p>fileType : {{selectedFile.filetype}}</p>
-     <p>parent id : {{selectedFile.parentid}}</p>
-   </div>
-  
- </div>
+<app-cdfile-details [cdfile]="selectedFile"></app-cdfile-details>

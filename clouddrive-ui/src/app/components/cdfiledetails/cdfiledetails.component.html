@@ -1,3 +1,17 @@
-<p>
-  cdfiledetails works!
-</p>
+<div *ngIf="cdfile">
+    
+      <h2>{{ cdfile.name | uppercase }} Details</h2>
+      <button *ngIf="cdfile.filetype==1" onclick="">open</button>
+      <div><span>id: </span>{{cdfile.id}}</div>
+      <div>
+        <label>Name:
+          <input [(ngModel)]="cdfile.name" placeholder="name"/>
+        </label>
+    
+      </div>
+<div>  <label>Size : {{cdfile.size}}</label></div>
+<div>  <label>File Type : {{cdfile.filetype}}</label></div>
+<div>  <label>SHA : {{cdfile.sha}}</label></div>
+<div>  <label>Path : {{cdfile.path}}</label></div>
+<div>  <label>Parent ID : {{cdfile.parentid}}</label></div>
+    </div>

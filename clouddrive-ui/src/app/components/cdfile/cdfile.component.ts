@@ -24,8 +24,10 @@ export class CdfileComponent implements OnInit {
    }
   
    onSelect(cdfile: CDFile): void {
+    
      this.selectedFile = cdfile;
+    
+ 
    }
-
    
  }

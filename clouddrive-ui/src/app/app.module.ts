@@ -8,9 +8,13 @@ import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { CdfileComponent } from './components/cdfile/cdfile.component';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { CdfolderDetailComponent } from './components/cdfolder-detail/cdfolder-detail.component';
 import { DataService } from './services/data.service';
 
+=======
+import { CdfiledetailsComponent } from './components/cdfiledetails/cdfiledetails.component';
+>>>>>>> 132399bb5ea83e6aca2a83074c4b780bece650c0
 =======
 import { CdfiledetailsComponent } from './components/cdfiledetails/cdfiledetails.component';
 >>>>>>> 132399bb5ea83e6aca2a83074c4b780bece650c0

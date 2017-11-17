@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CdfolderDetailComponent } from './cdfolder-detail.component';
+import { CdfiledetailsComponent } from './cdfiledetails.component';
 
-describe('CdfolderDetailComponent', () => {
-  let component: CdfolderDetailComponent;
-  let fixture: ComponentFixture<CdfolderDetailComponent>;
+describe('CdfiledetailsComponent', () => {
+  let component: CdfiledetailsComponent;
+  let fixture: ComponentFixture<CdfiledetailsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CdfolderDetailComponent ]
+      declarations: [ CdfiledetailsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CdfolderDetailComponent);
+    fixture = TestBed.createComponent(CdfiledetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

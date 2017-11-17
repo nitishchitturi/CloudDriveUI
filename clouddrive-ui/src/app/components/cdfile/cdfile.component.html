@@ -3,12 +3,18 @@
   <li *ngFor="let cdfile of cdfiles"
     [class.selected]="cdfile === selectedFile"
     (click)="onSelect(cdfile)">
-    <button>download</button>     <button>move</button>    <button>delete</button>
+    <div class="row">
+      
+    </div>
+    <button>download</button>     
+    <button>Move</button>
     <span class="badge">{{cdfile.id}}
         </span> {{cdfile.name}}
           
         
   </li>
+  <button class="btn btn-danger btn-sm" (onclick)="onDeleteClick()">Delete</button>        
+  
   
 </ul>
  
@@ -26,3 +32,28 @@
    </div>
   
  </div>
+  <hr>
+ <form (submit)="uploadFile()">
+   <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" [(ngModel)]="cdFile.name" name="name">
+   </div>
+
+   <div class="form-group">
+      <label>Path</label>
+      <input type="text" class="form-control" [(ngModel)]="cdFile.path" name="path">
+   </div>
+
+   <div class="form-group">
+      <label>SHA</label>
+      <input type="text" class="form-control" [(ngModel)]="cdFile.SHA" name="sha">
+   </div>
+
+   <div class="form-group">
+      <label>Type</label>
+      <input type="Number" class="form-control" [(ngModel)]="cdFile.fileType" name="filetype">
+   </div>
+
+   <input type="Submit" class="btn btn-success" value="Submit">
+
+ </form>

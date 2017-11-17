@@ -20,6 +20,7 @@ import { CdfiledetailsComponent } from './components/cdfiledetails/cdfiledetails
     BrowserModule,
     HttpModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [ DataService,],
   bootstrap: [AppComponent]

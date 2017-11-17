@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DataService } from '../../services/data.service'
 import { CDFile } from '../../cdfile';
 import { CDFiles } from '../../mock-files';
 
@@ -14,9 +15,16 @@ export class CdfileComponent implements OnInit {
    cdfiles = CDFiles;
   
    selectedFile: CDFile;
+
+   cdFile = {
+     name:'',
+     path:'',
+     SHA:'',
+     type:'',
+   }
   
   
-   constructor() { 
+   constructor(public dataservice: DataService) { 
   
    }
   
@@ -27,5 +35,16 @@ export class CdfileComponent implements OnInit {
      this.selectedFile = cdfile;
    }
 
+   uploadFile(){
+     console.log("upload function clicked");
+     this.dataservice.addCdFile(this.cdFile).subscribe(cdFile =>{
+       this.cdfiles.unshift(cdFile)
+     });
+   }
+
+   onDeleteClick(){
+     console.log("delete button clicked");
+     
+   }
    
  }

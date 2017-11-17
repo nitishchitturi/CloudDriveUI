@@ -32,8 +32,12 @@ export class CdfileComponent implements OnInit {
    }
   
    onSelect(cdfile: CDFile): void {
+    
      this.selectedFile = cdfile;
+    
+ 
    }
+<<<<<<< HEAD
 
    uploadFile(){
      console.log("upload function clicked");
@@ -46,5 +50,7 @@ export class CdfileComponent implements OnInit {
      console.log("delete button clicked");
      
    }
+=======
+>>>>>>> 8626b2446e277c4802aaeffc9fc2bbaef53f04c2
    
  }

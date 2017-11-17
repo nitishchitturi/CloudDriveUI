@@ -11,4 +11,5 @@ export const CDFiles: CDFile[] = [
   { id: 8, name: 'folder5' ,path:'root/', filetype: 1, size: 200, sha: 'SHA8', parentid:0},
   { id: 9, name: 'file4' ,path:'root/', filetype: 0, size: 2000, sha: 'SHA9', parentid:0},
   { id: 20, name: 'file5' ,path:'root/', filetype: 0, size: 2000, sha: 'SHA10', parentid:0},
+  { id: 20, name: 'folder6' ,path:'root/', filetype: 1, size: 200, sha: 'SHA11', parentid:0},
 ];

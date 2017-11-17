@@ -1,7 +1,7 @@
 <h2>My Files</h2>
 <ul class="cdfiles">
-  <li *ngFor="let cdfile of cdfiles"
-    [class.selected]="cdfile === selectedFile"
+  <li *ngFor="let cdfile of cdfiles"  
+  [class.selected]="cdfile === selectedFile"
     (click)="onSelect(cdfile)">
     <div class="row">
       
@@ -10,14 +10,16 @@
     <button>Move</button>
     <span class="badge">{{cdfile.id}}
         </span> {{cdfile.name}}
-          
-        
+    
+   
+               
   </li>
   <button class="btn btn-danger btn-sm" (onclick)="onDeleteClick()">Delete</button>        
   
   
 </ul>
  
+<<<<<<< HEAD
 <div *ngIf="selectedFile">
   
    <h2>{{ selectedFile.name | uppercase }} Details</h2>
@@ -57,3 +59,6 @@
    <input type="Submit" class="btn btn-success" value="Submit">
 
  </form>
+=======
+<app-cdfile-details [cdfile]="selectedFile"></app-cdfile-details>
+>>>>>>> 8626b2446e277c4802aaeffc9fc2bbaef53f04c2

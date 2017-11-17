@@ -1,0 +1,10 @@
+<h2>Files</h2>
+
+<ul class="files">
+  <li *ngFor="let folder of files">
+    <a routerLink="/detail/{{file.id}}">
+      <span class="badge">{{file.id}}</span> {{file.name}}
+    </a>
+  </li>
+</ul>
+

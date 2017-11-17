@@ -1,3 +1,6 @@
+
+
+//An interface for the expected file object
 export class CDFile{
     id: number;
     name: string;
